@@ -1,0 +1,176 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-about %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+                <h1 id="tests">AS PARENTS, WE WOULD LIKE OUR CHILDREN.....</h1><hr>
+                <ul id="checkmark">
+                    <li>To be self sufficient</li>
+                    <li>To learn languages</li>
+                    <li>To be healthy</li>
+                    <li>to Enjoy doing whatever makes them happy</li>
+                </ul>
+                <p>
+                    At Alpha, we want to help you choose the best sports-education program for your children to help 
+                    them reach their maximum potential.
+                </p>
+
+                    <div class="row">
+                            <div class="col-ten center">
+                                     <article class="format-gallery">
+                                     <div class="content-media">
+                                             <div class="post-slider flexslider">
+                                                 <ul class="slides">
+                                                     <li>
+                                                         <img src="{% static 'academy_website/usefulone.jpg' %}"> 
+                                                     </li>
+                                                     <li>
+                                                         <img src="{% static 'academy_website/football.jpg' %}"> 
+                                                     </li>
+                                                     <li>
+                                                         <img src="{% static 'academy_website/kickingsession.jpg' %}"> 
+                                                     </li>
+                                                 </ul>							
+                                             </div> 
+                                         </div>
+                                         </article> 
+                 
+                            </div>
+                            
+                        </div>
+ 
+                <section>  
+                     <div class="primary-content">
+                        <div class="bgrid">
+                        
+                         <h1 id="color" class="entry-title add-bottom">THE ACADEMY</h1>
+                         <hr>
+
+                         
+                       <p class="lead">The Alpha academy in England is located in the town of stammford,in the centre of the UK.The academy 
+                       has 10 years of experience coaching football to young talented players.</p>
+                       <hr>
+                        <h1 id="color">HISTORY</h1>
+                        <p>The academy was founded by the malinger brothers together with graham stamer,who began their 
+                            involvement with football in britain in the years 2000-10 as agents acting between professional
+                            footballer and teams.They also organised events to bring together talents scouts with footballers
+                            from all parts of british isles with a view to signing them. After 7 years collaborating with major
+                            teams from the Premier League, they also decided to create their own academy which was innitially
+                            based in Nene park,irthlinborough,in the country of Northamptonshire.</p></br>
+                            <p>After a number of years without a permanent location, in 2015 the academy moved to its permanent
+                            home of Stamford, where it remains and where the academy benefits from excellent sports facilities
+                            from which they deliver high quality coaching. The friendly atmosphere of the town means student feel
+                            at home, enjoying living in a residence together with other young people and which is situated very
+                            close to training grounds.</p>	
+                            </div>
+                         
+ 
+                         <div class="row block-1-2 block-tab-full">
+                             <div class="bgrid">
+                                 <h3 id="color" >Who?</h3>
+                                 <p>The Alpha Football Academy seeks young and talented footballers around the globe with the sole 
+                                     purpose of helping them achieve their dreams by helping them kickstart their career in the best 
+                                     way possible.
+
+                                 </p>
+                             </div>
+ 
+                             <div class="bgrid">
+                                 <h3 id="color" >When?</h3>
+                                 <p>The Alpha Football Academy offers admission to qualified candidates after they must have passed the 
+                                     various screening test exercices. Admission is offered twice a year through the regular academy 
+                                     programme. 
+                                 </p>
+                             </div>
+ 
+                             <div class="bgrid">
+                                    <h3 id="color" >How?</h3>
+                                    <p>By leveraging our state of the art facilities and world class management staff, Participants are 
+                                        immersed in professional football participation, building their skill as well as their confidence
+                                        to help them integrate seamlessly into professional careers at the end of the programme.
+   
+                                    </p>
+                                </div>
+                            </div>
+                    
+
+                                <div class="bgrid">
+                             <h2 id="colorred">STUDENT LIFE AT THE ACADEMY</h2><hr>
+                             <p>
+                                 Alpha football Academy ensures safety is essential. As a result, we employ a <strong>full-time qualified physiotherapist</strong> 
+                                 to help with footall related injuries. Furthermore, private medical cover is offered to all players which ensures immediate 
+                                 attention to any serious injuries picked up at the academy. Please note this medical cover does not cover for any injuries 
+                                 picked up before joining the academy.<br>
+                                 Alpha Football Academy also provides a <strong>Welfare Officer</strong> and all the residential staff hold the relevant DBS checks
+                                 and child protection certificates. All students on the full-time programme are registered with a local GP and dentist whilst also 
+                                 remaining registered with their doctor back home for holiday periods
+                             </p><br>
+                             <h2>STUDENT LIFE</h2>
+                             <h3 id="colorred">Excursions</h3>
+                             <p>
+                                 During your time at the Academy, some optional excursions are arranged. In recent seasons, these have included trips to watch live 
+                                 football matches, cinema trips, swimming, paintballing, go-karting, team building, shopping, gyms, ten-pin bowling, Alton Towers 
+                                 and many other forms of entertainment. All these excursions are fully supervised by Alpha Academy staffs.
+                             </p>
+                             <h3 id="colorred">Weekends</h3>
+                             <p>
+                                 Alpha Football Academy is set-up for players to stay for secen days of the week however if they wish, players are allowed to leave 
+                                 the Academy at weekends with parental consent providing they return by sunday evening.
+                             </p>
+
+                             <h3 id="colorred">Meals</h3>
+                             <p>
+                                 Alpha Football Academy caters for three maels a day, seven days a week during the academic year. Over the years we have had 
+                                 many international students catering for different cuisines and any dietry requirements.
+                             </p>
+
+                             <h3 id="colorred">Religions</h3>
+                             <p>
+                                 Many international students attend coming from a wide variety of cultures. The Academy will always try to cater for 
+                                 religious requirements when possible.
+                             </p>
+            
+
+                         </div>
+ 
+                     </div>	
+                     
+                     <div class="row" id="form">
+                        <a id="register"></a>
+                         <div class="col-four tab-full">
+                             
+                             <section>  
+                                             {% if submitted %}
+                                             <p id="color"> Your Registration Form Has Been Submitted Succesfully</p>
+                                             <p id="colorred">Please check your Email to complete your Registration</p>
+                                             {% else %}
+                                             <form action="" enctype="multipart/form-data" method="POST" novalidate>
+                                             
+                                                 <div class="form-field">
+                                                 {% csrf_token %}
+                                                 {{ form.as_p }}
+                                                 </div>
+                                                 <button class="btn btn-success" type="submit">Submit</button>
+                                             
+                                             </form>
+                                             {% endif %} 
+              
+                              </section>
+                         </div>
+                     </div>	
+ 
+                 </section>  		
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->
+         
+    </section> <!-- end content -->
+    
+{% endblock %}

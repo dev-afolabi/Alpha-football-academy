@@ -1,0 +1,56 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block body_block %}
+{% load static %}
+
+ <!-- content
+   ================================================== -->
+   <section id="content-wrap">
+        <div class="row">
+            <div class="col-four tab-full">
+ 
+                <section>  
+                         <div class="primary-content">
+                                {% if submitted %}
+                                <p id="color"> Your Registration Form Has Been Submitted Succesfully</p>
+                                <p id="colorred">Please check your Email to complete your Registration</p>
+                                <a id="home" href="{% url 'home' %}">Home</a>
+                                {% else %}
+                                <form action="" enctype="multipart/form-data" method="POST" novalidate>
+                                    <fieldset>
+                                    <div class="form-field">
+                                    {{ form.as_p }}
+                                    {% csrf_token %}
+                                    </div>
+                                    <button class="btn btn-success" type="submit">Submit</button>
+                                    </fieldset>
+                                </form>
+                                {% endif %}
+                         </div> 
+ 
+                 </section>
+            </div>
+
+            <section>
+
+            <div class="col-eight tab-full">
+                        
+                <h3 id="colorred">PLEASE NOTE:</h3><p>A copy of the Alpha registration form will be sent to you shortly </p>
+                        <ol id="color">
+                            <li>Print two copies of the Alpha registration form</li>
+                            <li>Kindly fill the registration form correctly with the right information and signature</li>
+                            <li>Your parent/guardian must fill the parent/guardian's session of the Alpha registration form with authorized signature</li>
+                            <li>Attach a passport photograph to the Alpha acadamy registration form</li>
+                            <li>Attach every supporting documents as stated in the Alpha registration form</li>
+                            <li>Bring a copy of your Alpha registration form upon your arrival at the Alpha learning center on given admission into the program</li>
+                            
+                        </ol>
+        
+            </div>
+            </section>
+                 <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+
+
+
+{% endblock %}

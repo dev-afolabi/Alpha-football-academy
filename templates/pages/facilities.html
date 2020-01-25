@@ -1,0 +1,96 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav- %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+                <div class="col-ten center">
+ 
+                        <section>  
+                                <article class="format-gallery">
+                                        <div class="content-media">
+                                                <div class="post-slider flexslider">
+                                                    <ul class="slides">
+                                                        <li>
+                                                            <img src="{% static 'academy_website/academy-football-66.jpg' %}"> 
+                                                        </li>
+                                                        <li>
+                                                            <img src="{% static 'academy_website/academy-football-46.jpg' %}"> 
+                                                        </li>
+                                                        
+                                                    </ul>							
+                                                </div> 
+                                        </div>
+                                    </article>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-twelve"> 
+ 
+                        
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">FOOTBALL FACILITIES</h1><hr>
+                         <p>
+                             Alpha Football Academy are based at the newly built &pound;5.5m development at the <strong>Borderville Sports Complex</strong> 
+                             in Stamford.<br>
+                             The Academy matches will be held at the capacity stadium, with training held on the floodlit <strong>full-sixe 3G all-weather pitch</strong> 
+                             and grass training pitches. The Centre also boasts a sports hall, a fully equipped gymnasium, dressing rooms, medical room, 
+                             canteen and classsrooms. These facilities have enabled the Academy to  increase its intake of students each year to keep up 
+                             with the increasing high demand.
+                         </p><br>
+
+                         <h2 id="color">FURTHER INFORMATION</h2><hr>
+                         <h3 id="colorred">stadiums</h3>
+                         <p>
+                             Each year, the Academy holds its final year Showcase Match and Awards Presentation at some of the top stadiums in the UK. 
+                             In recent years we have traveled to The Hawthorns, home of West Bromich Albion, the Ricoh Arena, home of Coventry City and most 
+                             recently The King Power Stadium, home of the former Premier League champions Leceister City.
+                         </p>
+                         <h3 id="colorred">St George's Park - Burton</h3>
+                         <p>
+                             Alpha Football Academy has held so many events and training sessions at St Georges Park, the FA's National Football Centre. The 
+                             Centre is the training base for the 24 England National Teams, and the facilities include a multipurpose indoor sports hall, 11 full 
+                             size outdoor pitches, one elite DESSO training pitch which is an exact replica of the pitch at Wembley, and two hotels.
+                         </p>
+
+                         <h3 id="colorred">Oakham School</h3>
+                         <p>
+                             Some training sessions and matches are also held at Oakham School, one of the leading private schools in the area boasting outstanding 
+                             sports facilities. With 40 acres of the best grass playing areas in the country, a multi-purpose sports centre, an indoor pool, two floodlit 
+                             all-weather pitches, a stregth and conditioning room and a fitness centre, the school has become a well-recognised training for national squads.
+                         </p>
+
+                         <div id="midrow" class="row shortcourse ">
+
+                                <div class="col-twelve tab-full">
+                        
+                                    <h1>FOOTBALL SHORT COURSES</h1>
+                                    <h3>BOOK ONLINE TODAY</h3>
+                        
+                                 <p>
+                                   Alpha Football Academy also offers short courses designed to give players an experience of what life is like at 
+                                   the Academy. All short courses are fully residential using the same boarding house as the full-time Academy players, 
+                                   and optional extras such as English Language lessons can be provided.<br>
+                                   <span><a href="{% url 'short_course' %}"><p id="link">FIND OUT MORE</p></a></span> 
+                                </p>
+                             </div>
+                           </div> <!-- end row -->
+
+
+                         
+                        
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

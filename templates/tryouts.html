@@ -1,0 +1,141 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-categories %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+ 
+                <section>  
+ 
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">THE AlPHA ACADEMY PRO SOCCER TRY-OUTS</h1>
+                         <hr>
+                         <img src="{% static 'academy_website/tryouts2.jpg' %}">
+ 
+                         <p class="lead">Get scouted by the network that represents Football Scouts Worldwide</p> 
+ 
+                         <p>
+                           Want to be scouted by the network that represent Football Scouts Worldwide at the UK's 
+                           most succesful football trials? Then good news you're in the right place!</p>
+                           <p>The Alpha Football Academy in conjuction with the Professional Football Scouts Association 
+                           deliver the UK's most succesful football trials events in and around the UK, attended by 
+                           our members across the country. we deliver football trials in various locations with our 
+                           home base at UClan's world-class facilities in Preston. The Alpha Academy PRO Soccer Try-Outs 
+                           will be suppoorted by Adidas and will have scouts attending connected with all clubs within 
+                           the Premier League, Championship, League One and Two, La-liga and The Bundesliga.</p>
+                           <p>The Alpha Football Academy has decided to collaborate with The Professional Football Scouts 
+                           Association who represents Football Scouts Worldwide and with a member base sitting within 
+                           it's thousand, we have decided to best utilise this network through Soccer Try-Outs, giving 
+                           the younger generation the best opportunity at finding a professional or semi-professional 
+                           footbal club. Please note places are extremely limited so if you wish to attend then <strong>please book early</strong> 
+                           to avoid missing out on the UK's most succesful football trials.
+                        </p>
+
+                        <h1 id="color">WHEN AND WHERE</h1>
+                        <hr>
+                        
+                         <P>
+                             The Alpha Academy hold trial days in and around the country with our primary base at 
+                             UCLan's World Class facilities at their Sports Arena in Preston. UCLan has internationally 
+                             recognised facilities and is one of the Worlds leading departments in Sports Science which is 
+                             perfect as the Alpha Academy aim to add further metrics to our trials days by partnering up with 
+                             VXSports and providing sporting diagnostics like the professionals!
+                         </P>
+                         
+                         <h1 id="color">WHO WILL ATTEND ON THE DAY</h1>
+                         <hr>
+
+                         <p>
+                            The more appropriate question to ask is who does not attend the Alpha Academy Pro Soccer Try-Outs. 
+                            we have a network of thousands of football scouts as members of the Professional Football Scouts Association. 
+                            We will have our co-founders and senior scouts at leading football clubs attending. All players highlighted 
+                            on the day will then be sent to our network.
+                         </p>
+
+                         <h1 id="color">WHAT HAPPENS ON THE DAY</h1>
+                         <hr>
+                         <p>
+                             The Alpha Academy Trials are a full day event 9am to 4pm. The AM consists of all ages coaching 
+                             then as we move into the afternoon, we start with the trial matches. Snacks and refreshments are 
+                             availabile on the day to rehydrate and fill up on that much needed energy boost.
+                         </p>
+                         <img src="{% static 'academy_website/tryouts1.jpg' %}">
+
+                         <h1 id="color">VIDEO ANALYSIS</h1>
+                         <hr>
+
+                         <P>
+                             The Alpha Academy Pro Soccer Try-Outs will be using top of the range video analysis 
+                             software to give our trialist the option to record their trials day experience. Having 
+                             your skills on video gives you the edge over the competition and is vital in standing out from 
+                             the crowd. One of the main reasons the Alpha Academy decided to launch the video analysis option was 
+                             to enable us send the recorded videos of impressive trialist to scouts and hiring managers not present 
+                             on trial days. Even though a football CV is useful information in guaging the level at which you have 
+                             played at, it was always difficult to validate the skills on paper. 
+                         </P>
+
+                         <h1 id="color">HOW TO BOOK</h1>
+                         <hr>
+                         <p>
+                             Places for the Alpha Academy Pro Soccer Try-Outs will be extremely limited, so please make sure 
+                             you book early to avoid disappointment. if you would like to book onto the football trials day, please 
+                             follow the link below and fill in all the information required. Once you have booked onto the football trials 
+                              you will be sent a full itinerary within 4 weks prior to the start date, detailing the whole days action, 
+                              what time to arrive and what to expect.
+                         </p>
+                         <div id="midrow" class="row shortcourse">
+
+                                <div class="col-twelve tab-full">
+                        
+                                    <h1>FOOTBALL SHORT COURSES</h1>
+                                    <h3>BOOK ONLINE TODAY</h3>
+                        
+                                 <p>
+                                   Alpha Football Academy also offers short courses designed to give players an experience of what life is like at 
+                                   the Academy. All short courses are fully residential usin the same boarding house as the full-time Academy players, 
+                                   and optional extras such as English Language lessons can be provided.<br>
+                                   <span><a href="{% url 'short_course' %}"><p id="link">MORE</p></a></span> 
+                                </p>
+                             </div>
+                           </div> <!-- end row -->
+
+                      
+ 
+                           <div class="row" id="form">
+                            <a id="register"></a>
+                             <div class="col-four tab-full">
+                                 
+                                 <section>  
+                                                 {% if submitted %}
+                                                 <p id="color"> Your Registration Form Has Been Submitted Succesfully</p>
+                                                 <p id="colorred">Please check your Email to complete your Registration</p>
+                                                 {% else %}
+                                                 <form action="" enctype="multipart/form-data" method="POST" novalidate>
+                                                 
+                                                     <div class="form-field">
+                                                     {% csrf_token %}
+                                                     {{ form.as_p }}
+                                                     </div>
+                                                     <button class="btn btn-success" type="submit">Submit</button>
+                                                 
+                                                 </form>
+                                                 {% endif %} 
+                  
+                                  </section>
+                             </div>
+                         </div>	
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

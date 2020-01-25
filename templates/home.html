@@ -1,0 +1,285 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-index %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+ <!-- content
+ ================================================== -->
+<section id="content-wrap">
+
+    
+<div class="row">
+
+    <div class="col-twelve">
+        <div class="entry-content">
+            <img src="{% static 'academy_website/football-academy-5.jpg' %}" class="responsive"> 
+        </div>
+    </div>
+</div>
+<div class="row">     		
+    <div class="col-twelve tab-full text-center"  >
+        
+        <blockquote>
+                <p>
+                        WE HELP YOUNG ATHLETES BECOME GREAT FOOTBALLERS AND EVEN BETTER PEOPLE.
+              </p>
+                 <cite>
+                    Graham Stamer
+                 </cite>
+            </blockquote>
+        </div>
+</div>
+<div id="midrow" class="row">
+
+        <div class="col-twelve tab-full">
+
+            <h1 id="color">UK FOOTBALL ACADEMY</h1>
+          
+
+            <hr>
+
+            <h2 id="colorred">WHAT WE OFFER</h2>
+            <p>Alpha Football Academy is a residential football academy based in Stamford, a picturesque stone town in 
+                rural Lincolnshire.<br>
+                The Academy benefits from top-class <a href="{% url 'facilities' %}">football facilities</a>, including the use of top-quality 
+                3G training pitches, study centre, state of the art gym and indoor facilities where the aim is to deliver 
+                intensive coaching sessions designed to improve and develop every individual's game.<br>
+                Alpha also provides a range of <a href="{% url 'education' %}">education</a> courses, including the popular <a href="{% url 'btec3' %}">BTEC Sports Studies course</a> 
+                delivered by the world renowned centre for sporting excellence, Loughborough College. Futhermore, the 
+                Academy has the facilities to allow for English Language, A-Levels and Degree courses to be studied.<br>
+                The high quality <a href="{% url 'accommodation' %}">accomodation</a> available at the Academy features en-suite rooms, study areas, 
+                games room and on-site kitchen. The accomodation is highly supervised and run to a professional football club 
+                standard, and all the highly-trained staff hold the relevant qualifications and child protection policies.<br>
+                Away from the football and education courses, Alpha provides a host of other activities for the students, such 
+                as seminars, workshops, visits to football games, guest speakers including some of the big names in football, 
+                evening entertainment, team-building exercises and many other activities that will not only benefit your football 
+                development, but make your time here at the academy fun, enjoyable and life-changing.<br>
+                If you believe you or your son has the ability, talent and desire to play the game professionally, then joining 
+                the Alpha Football Academy could prove to be the most important, and the best decision of your life.
+
+            </p>
+           
+
+            </p>
+     </div>
+   </div> <!-- end row -->
+
+<div id="midrow" class="row">
+
+        <div class="col-twelve tab-full">
+
+            <h1 id="color">Our Objective and Vision</h1><hr>
+
+         <p>
+                The objective of Alpha Football Academy development activity is to ultimately improve the football experience 
+            of those who wish to play the game. Building the skills and capacity of the individuals responsible for providing
+            this football experience is therefore key to this objective.</br> The Alpha Football academy will provide 
+            the most talented and skilled youngsters with the opportunity to progress their career within football.
+            Through training and playing in a disciplined enviroment, each player will acquire skills that 
+            are far more important than footballing ability alone.  </p>
+     </div>
+   </div> <!-- end row -->
+   <div id="midrow" class="row">
+
+    <div class="col-twelve tab-full">
+
+        <h1 id="color">EMPOWERING A YOUNG ATHLETE'S FUTURE</h1><hr>
+
+        <ul id="imagebullet">
+            <li>
+                <h2 id="colorred">Educational experience</h2>
+                <p>
+                    Many of our sports programs offer language courses and promote cultural awareness and intercultural 
+                    harmony. Young footballers who enrol in any program offered in our academy learn fundamental values 
+                    and inspirational life lessons. By living together with other footballers from all over the world, 
+                    they learn to respect others, to share with others, and even the importance of tidiness and organisation.
+                </p>
+            </li>
+            <li>
+                <h2 id="colorred">Sports experience</h2>
+                <p>
+                    Student footballers form stronger value and live healthier lifestyles.<br>
+                    Our sports programs are designed to improve young athletes' physical fitness, technique, and mental 
+                    strength on the field while at the same time teaching values such as discipline, hardwork, and responsibility.
+                </p>
+            </li>
+            <li>
+                <h2 id="colorred">Life Experience</h2>
+                <p>
+                    Our sports programs offer young student athletes the life experience they need to grow into mature, 
+                    responsible, confident adults.<br>
+                    Participants in our sports program spend time away from home where they have the opportunityto grow and 
+                    mature as self-sufficient individuals in a safe and supervised enviroment.
+                </p>
+            </li>
+        </ul>
+        <p>
+            At Alpha, we offer the best sports programs and educational programs to suit all levels and objectives. 
+            We offer everything from long-term intensive academic and sports training programs to short term creative, artistic, 
+            and/or language-oriented sports programs.
+        </p>
+ </div>
+</div> <!-- end row -->
+<div id="midrow" class="row shortcourse">
+
+        <div class="col-twelve tab-full">
+
+            <h1>FOOTBALL SHORT COURSES</h1>
+            <h3>BOOK ONLINE TODAY</h3>
+
+         <p>
+           Alpha Football Academy also offers short courses designed to give players an experience of what life is like at 
+           the Academy. All short courses are fully residential using the same boarding house as the full-time Academy players, 
+           and optional extras such as English Language lessons can be provided.<br>
+           <span><a href="{% url 'short_course' %}"><p id="link">MORE</p></a></span> 
+        </p>
+     </div>
+   </div> <!-- end row -->
+
+   <div id="midrow" class="row">
+
+        <div class="col-twelve tab-full">
+
+            <h1 id="color">PLAY FOOTBALL AT THE ACADEMY</h1>
+
+         <p>
+            The Alpha Football Academy offer a wide range of football opportunities ranging from a single trials showcase match 
+            to a full showcase match to a full-time football programme.
+        </p>
+        <a href="{% url 'fulltime' %}">
+            <div class="boxes">
+            <img src="{% static 'academy_website/football-academy-football-courses-1.jpg' %}">
+            <h3 id="colorred">Full-time Football Course</h3><hr>
+            <p>
+                Qualified UEFA coaching and full-time soccer training.
+            </p>
+            </div>
+        </a>
+
+        <a href="{% url 'showcase_match' %}">
+            <div class="boxes">
+                <img src="{% static 'academy_website/football-academy-football-courses-2.jpg' %}">
+                <h3 id="colorred">Showcase Matches</h3><hr>
+                <p>
+                    Getting spotted by Premier League and English Football League scouts.
+                </p>
+            </div>
+        </a>
+
+        <a href="{% url 'short_course' %}">
+            <div class="boxes">
+                <img src="{% static 'academy_website/football-academy-5.jpg' %}">
+                <h3 id="colorred">Football Short Courses</h3><hr>
+                <p>
+                    Intensive football 5 days a week at the UK's prestigious private football academy.
+                </p>
+            </div>
+        </a>
+
+            <hr>
+     </div>
+   </div> <!-- end row -->
+
+
+   
+    <div id="midrow" class="row">
+
+            <div class="col-twelve tab-full">
+    
+                <h2 id="prices">SELECTION PROCESS AND PRICES</h2>
+    
+             <p>
+                Training at the academy in England is high performance training. Players who attend have the opportunity to 
+                improve their performance to be able to play at a professional level. To be accepted, candidates must not only 
+                play football at high level but also be willing to make sacrifices and work hard to achieve their goals.
+            </p>
+            <h3 id="tests">OPTION 1 - IN PERSON: ACCESS TESTS</h3>
+            <p>
+                There are three ways to try out for the academy's full year program <strong>in-person:</strong><br>
+                <strong>Option 1:</strong> Participate in one of the camps that the academy organizes during the summer.
+
+                <ul id="adv">
+                    <li id="tests">All participants are new to the academy and begin the camp at the same time (these programs take place 
+                        during the holidays of the full-year academy students)
+                    </li>
+                </ul>
+                <ul id="disadv">
+                    <li id="colorred">This option does not completely recreate the experience of a full-year academy student, but participants
+                        do have the opportunity to get to know the enviroment, the academy, and the training.
+                    </li>
+                </ul>
+                <strong>Option 2:</strong> Participate in intensive program at any time of the year.<br>
+                These programs are at least one week in duration and may occur at any time during the year. Training 
+                sessions are intensive and more personalised than training sessions at the summer camps. Participants train 
+                with full year academy students.
+
+                <ul id="adv">
+                    <li id="tests">Players who choose this option live an experience very similar to a full year program at the academy</li>
+                    <li id="tests">The program is more personalised due to smaller number of participants</li>
+                </ul>
+
+                <ul id="disadv">
+                    <li id="colorred">Participants must adapt to playing with a group of players who have already been playing together 
+                        for months
+                    </li>
+                </ul>
+
+                <strong>Option 3:</strong> Attend a trial.<br>
+                The academy host trials each year for players looking to attend the academy as full-year students. They usually take 
+                place in July and August for one day during each month. Hopeful candidates visit the academy to attend the trial and 
+                visit sports facilities.<br>
+                During the trial, footballers play in a match organised by the coaches specifically to analyze the players' skills 
+                and potential. Coaches select the most talented players with the strongest work ethic to attend the academy. Participants
+                must make a nonrefundable deposit during application.<br>
+                For players who cannot attend either of the trial days, the academy can organise an individual trial at a different time 
+                and date (this option also requires a payment).
+                
+            </p>
+            <h2 id="prices">PRICES OF THE FULL-YEAR PROGRAM HAVING PASSED THE IN PERSON TRIAL</h2>
+            <p>
+                After having analysed each player, the academy offers a price quote for each student according to the education option 
+                that they choose and offers them the opportunity to study and train at the academy.<br>
+                For more information about prices and dates, fill out the enrollment form below.
+
+
+            </p>
+
+            <h3 id="tests">OPTION 2 - AT A DISTANCE</h3>
+            <p>
+                In certain exceptional circumstances, the academy accepts video footage of hopeful candidates during match play which must 
+                also be accompanied by their current coache's reference information. The video analysis costs &pound;105. <br>
+                To see the prices of this access option, please fill the registration form below.
+            </p>
+    
+                <hr>
+         </div>
+       </div> <!-- end row -->
+       <a href="#register"></a>
+       <div class="row" id="form">
+           <a id="register"></a>
+            <div class="col-four tab-full">
+                
+                <section>  
+                                {% if submitted %}
+                                <p id="color"> Your Registration Form Has Been Submitted Succesfully</p>
+                                <p id="colorred">Please check your Email to complete your Registration</p>
+                                {% else %}
+                                <form action="" enctype="multipart/form-data" method="POST" novalidate>
+                                
+                                    <div class="form-field">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+                                    </div>
+                                    <button class="btn btn-success" type="submit">Submit</button>
+                                
+                                </form>
+                                {% endif %} 
+ 
+                 </section>
+            </div>
+        </div>	
+           </section> <!-- end styles -->
+
+
+{% endblock %}

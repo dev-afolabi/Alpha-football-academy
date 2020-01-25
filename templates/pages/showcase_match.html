@@ -1,0 +1,67 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav- %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+ 
+                <section>  
+                    <img src="{% static 'academy_website/football-academy-football-courses-2.jpg' %}">
+ 
+                        
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">FOOTBALL SHOWCASE MATCHES</h1>
+                         <p>
+                            We have held <strong>football trials in the UK </strong>since 2001 with great success. Many of our trial footballers have gone 
+                            on to sign for football clubs across Europe as a result of our UK trials. Our UK football trials are regularly attended by scouts 
+                            from the <strong>Premier League</strong> and <strong>English Football League</strong>, as well as non-league and international coaches 
+                            and football managers. Many players have a football club trial following one of our events.<br>
+                            On the day you will play a game i your age group. There are often age groups for 14 to 15 years olds and for those 16 years old and 
+                            over. We do occasionally run football events for younger age groups.<br>
+                            You can book your age group and preferred playing positions online and you'll receive full details of what to bring on the day 
+                            along with time, locations and trials advice.  
+                         </p>
+                         <h1>UPCOMING FOOTBALL TRIALS &amp; SHOWCASE MATCHES</h1>
+                         <p>
+                             Showcase matches are <strong>football trials</strong> organised by Alpha Football Academy on a regular basis. You will play in a match 
+                             in your own age group and in attendance are <strong>scouts and managers</strong> from clubs from <strong>Premiership</strong> to 
+                             <strong>Non-League</strong> level or sometimes you may play against academy pro teams. You can book by selecting an event below and 
+                             book online.<br><hr>
+                             There are no football showcase matches currently scheduled.
+                         </p>
+                        
+
+                         <div id="midrow" class="row shortcourse">
+
+                                <div class="col-twelve tab-full">
+                        
+                                    <h1>FOOTBALL SHORT COURSES</h1>
+                                    <h3>BOOK ONLINE TODAY</h3>
+                        
+                                 <p>
+                                   Alpha Football Academy also offers short courses designed to give players an experience of what life is like at 
+                                   the Academy. All short courses are fully residential usin the same boarding house as the full-time Academy players, 
+                                   and optional extras such as English Language lessons can be provided.<br>
+                                   <span><a href="{% url 'short_course' %}"><p id="link">FIND OUT MORE</p></a></span> 
+                                </p>
+                             </div>
+                           </div> <!-- end row -->
+
+                         
+                         
+                        
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

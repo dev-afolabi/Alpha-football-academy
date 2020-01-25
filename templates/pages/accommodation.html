@@ -1,0 +1,118 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav- %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-ten center">
+ 
+                <section>  
+                        <article class="format-gallery">
+                                <div class="content-media">
+                                        <div class="post-slider flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="{% static 'academy_website/academy-garden-house-2.jpg' %}"> 
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'academy_website/academy-garden-house-1.jpg' %}"> 
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'academy_website/academy-garden-house-3.jpg' %}"> 
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'academy_website/academy-footballf.jpg' %}"> 
+                                                </li>
+                                                
+                                            </ul>							
+                                        </div> 
+                                </div>
+                            </article>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-twelve">                                
+ 
+                  <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">ACCOMMODATION AT THE ACADEMY</h1><hr>
+                         <p>
+                             The Academy's main residential houses are the Garden House and the Coach House. We do on occassion use lanladies 
+                             who have been fully checked by our Welfare Manager and hold the same safety certificates as our full-time residential 
+                             staff. They are situated within a two-minute walk of the Garden House, where they would still be able to enjoy the 
+                             facilities offered plus take their meals with other students. Our Landladies would normally have between two and 
+                             six students at any time, occasionally accommodating players when the Academy is closed.<br>
+                             They are very much family oriented having had families of their own, as well as previously fostering younger children. 
+                             With multi lingual speakers in French &amp; Spanish as well as English, it is very much a homely atmosphere. This type of 
+                             accommodation also gives the student a little more independence, which is the main reason we look to house older students. 
+                             It is a shared bathroom facility rather than the en-suite offeredin the Garden House, however there is access to Wi-Fi, 
+                             space to study, lounge area and garden to relax in.
+                         </p>
+
+                         <h1 id="color">STUDENT ACCOMMODATION</h1>
+                         <h2 id="colorred">About the Academy Boarding House</h2>
+                         <p>
+                             The Garden House facilities include 20 twin rooms with en-suite facilities, a dining room, communal rooms, games room, 
+                             study centre, conservatory and nearly an acre of walled gardens. Students are provided with 3 meaals a day courtesy of our 
+                             in-house kitchen, with all full cuisines catered for. WiFi is provided and fully qualified on-site residential staff 
+                             will be on hand to ensure that students have all they need to enjoy a safe and friendly stay at the Academy.<br>
+                             The boarding house is staffed 24 hours a day, 7 days a week by our highly experienced and qualified residential team and 
+                             is situated just a short drive away from the Borderville Sports Complex, the base for all Academy football training and 
+                             matches, with transport to and from Borderville provided by the Academy.
+                         </p>
+
+                         <h2 id="colorred">How to find us in Stamford</h2>
+                         <p>
+                             The Garden House is a historic building, located next to Burghley Park and a few minutes stroll from the centre of historic 
+                             Stamford. Stamford itself is a bustling market town set in the heart of rural England, and was known for over a hundred 
+                             years as "the finest stone town in England". In 2017, the Sunday Times voted Stamford as the second best place to live 
+                             in the UK. Finding us is very straightforward - we are just off of High Street St. Martin's, which is part of the main road 
+                             through Stamford. Entry to the car park is from Pinfold Lane, which is off of the A43 Kettering Road.<br>
+                             Stamford train station is only 400 yards from the boarding house, and a main line station at Peterborough is only a ten minutes 
+                             train journey away. Peterborough links to London, Manchester and Stansted Airport on an hourly basis.
+                         </p>
+                         <h2 id="colorred">By car</h2>
+                         <p>
+                             Using the A1 from the south, take the slip road signposted B1081 Stamford and Burghley House (about amile after you pass RAF 
+                             Wittering on the left). Follow the road down the hill into Stamford. We are the first building on the left as you enter town.<br>
+                             Using the A1 from the north, stay on the A1 until the A43 exit (ignore previous stamford exits). Turn left towards Stamford. 
+                             In less than a mile, 50 yards before the end of the A43, turn right into Pinfold Lane: the hotel car park is the third gateway 
+                             on the left (the one with the archway).<br>
+                             Using the A43 from the west, 50 yards before the end of the A43, turn into Pinfold Lane; the hotel car park is the third gateway 
+                             on the left (the one with the archway).<br>
+                             Using the A16 from the east, once in Stamford, follow the signs for London/A1 South. After crossing the town bridge, continue up 
+                             the hill on the B1080. We are the last building on the right, just after the A43 junction.
+                         </p>
+
+                         <div id="midrow" class="row shortcourse">
+
+                            <div class="col-twelve tab-full">
+                    
+                                <h1>FOOTBALL SHORT COURSES</h1>
+                                <h3>BOOK ONLINE TODAY</h3>
+                    
+                             <p>
+                               Alpha Football Academy also offers short courses designed to give players an experience of what life is like at 
+                               the Academy. All short courses are fully residential usin the same boarding house as the full-time Academy players, 
+                               and optional extras such as English Language lessons can be provided.<br>
+                               <span><a href="{% url 'short_course' %}"><p id="link">FIND OUT MORE</p></a></span> 
+                            </p>
+                         </div>
+                       </div> <!-- end row -->
+
+                         
+                         
+                        
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

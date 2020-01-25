@@ -1,0 +1,106 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-education %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-ten center">
+ 
+                    <section>  
+                            <article class="format-gallery">
+                                    <div class="content-media">
+                                            <div class="post-slider flexslider">
+                                                <ul class="slides">
+                                                    <li>
+                                                        <img src="{% static 'academy_website/academy-education-2.jpg' %}"> 
+                                                    </li>
+                                                    <li>
+                                                        <img src="{% static 'academy_website/academy-education-9.jpg' %}"> 
+                                                    </li>
+                                                    <li>
+                                                            <img src="{% static 'academy_website/academy-education-5.jpg' %}"> 
+                                                    </li>
+                                                    
+                                                </ul>							
+                                            </div> 
+                                    </div>
+                                </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-twelve">
+ 
+                        
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">EDUCATION AT THE ACADEMY</h1>	
+                         <hr>
+ 
+                         
+ 
+                         <p class="lead">
+                            The Academy combines full-time football coaching with a wide range of education courses. 
+                            We are proud of the diversity of our education programme and can offer full-time and part-time 
+                            education to suit your needs. We have partnered with some UK's leading specialist education 
+                            partners to offer class teaching and qualifications.
+                        </p>
+                        <h1 id="color" class="entry-title add-bottom">EDUCATION COURSES</h1>
+
+                        <p class="lead">
+                              Not sure which course to choose? Browse through our course guide below to give you an insight 
+                              into all the education opportunities at the Alpha Football Academy.
+                            </p>
+
+                         <a href="{% url 'btec3' %}">
+                             <div class="boxes">
+                             <img width="300" height="250" alt="sample-image" src="{% static 'academy_website/football-academy-education-courses-6.jpg' %}">
+                             <h3 id="colorred">BTEC Level 3 Sports Diploma</h3>
+                             <p>BTEC Level 3 Extended Diploma in Sport (Performance and Excellence).</p>
+                         </div>
+                         </a>
+
+                        <a href="{% url 'english' %}">
+                            <div class="boxes">
+                                <img width="300" height="250" alt="sample-image" src="{% static 'academy_website/football-academy-education-courses-8.jpg' %}">
+                                  <h3 id="colorred">English Language Programme</h3>
+                                 <p>English Language Football Programme for players aged 16 and over from around the world.</p>
+                            </div>
+                        </a>
+
+
+                        <a href="{% url 'alevel' %}">
+                            <div class="boxes">
+                                <img width="300" height="250" alt="sample-image" src="{% static 'academy_website/football-academy-education-courses-10.jpg' %}">
+                                <h3 id="colorred">A Level Business Studies</h3>
+                                <p>The Business Studies syllabus enables learners to understand and appreciate the nature and 
+                                    scope of business, and the role it plays in society.
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="{% url 'degree' %}">
+                                <div class="boxes">
+                                    <img width="300" height="250" class="center" alt="sample-image" src="{% static 'academy_website/football-academy-education-courses-7.jpg' %}">
+                                    <h3 id="colorred">Blended Learning Sports Degree</h3>
+                                    <p>The Alpha Football Academy offers the opportunity to study either a BA(Hons) Sports 
+                                        Management or BSc Sport Coaching degree.
+                                    </p>
+                                </div>
+                        </a>
+                      
+ 
+                         
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

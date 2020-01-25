@@ -1,0 +1,89 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-education %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+ 
+                <section>  
+ 
+                        <img src="{% static 'academy_website/football-academy-education-courses-6.jpg' %}">
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">BTEC LEVEL 3 EXTENDED DIPLOMA IN SPORT</h1><hr>
+                        <p>
+                            ALPHA Football Academy offers the BTEC Level 3 Extended Diploma in Sport (Performance and Excellence) 
+                            qualification in association with world-renowned centre for sporting excellence, <strong>Loughborough College.</strong> <br>
+                            Establishd in 1909, Loughborough College has established a proud, long-standing reputation for providing 
+                            excellent levels of high-quality training across UK. In its most recent <strong>OFSTED</strong> rating Loughborough 
+                            College received an <strong>Outstanding</strong> for its apprenticeships, including elite sport apprenticeships.<br>
+                            Alongside its partnership with the Alpha Football Academy, Loughborough College support a number of professional 
+                            football clubs including Leceister City, Derby County, Birmigham City and Nottingham Forest to name a few. 
+                            Loughborough College students and alumni have also delivered on the international stage, achieving 4 medals at the 
+                            Rio Olympics and an incredible 30 medals at the 2018 Commonwealth Games, which would have seen Loughborough 
+                            College finish 9th in the medal table if they were a country.
+
+                        </p><br>
+                        <h1 id="color">COURSE INFORMATION</h1><hr>
+                        <p>
+                            The BTEC Level 3 Extended Diploma in Sport (Performance and Excellence) is a two-year course, requiring 15 hours of 
+                            study per week, which are fitted in around the football training. The vocational course explores different  ares of 
+                            employment in the sports sector, and is perfect for those aspiring to a career in sport.<br>
+                            Alpha Football Academy can now offer BTEC course to full-time students who start with us in January of each year, 
+                            as well as regular September starters.
+                        </p>
+                        <h2 id="colorred">Course Content</h2>
+                        <ul>
+                            <p>
+                                The course consist of 19 units which explore a variety of different areas, including:
+                            </p>
+                            <li>Anatomy and Physiology and Physiology of Fitness</li>
+                            <li>Sports coaching and Assesing Risk</li>
+                            <li>Technical and Tactical Skills</li>
+                            <li>Analysis of Sports Performance</li>
+                            <li>Fitness testing and Fitness Training and Programming</li>
+                            <li>Sports Injuries</li>
+                            <li>Sports Psychology</li>
+                            <li>Talent Identification</li>
+                        </ul>
+                        <p>
+                            The BTEC educational programme is delivered by college tutors Loughborough College, with the students transported 
+                            to campus by the Academy and college buses.
+                        </p>
+                        <h2 id="colorred">Assesment</h2>
+                        <p>
+                            The course is delivered in a vocational manner, with assessment ranging from written reports, portfolios 
+                            and posters to verbal assesments, presentations, and practical observations.<br>
+                            During the first-year, students will study the BTEC 90 Credit Diploma, which on succesful completion will enable 
+                            them to progress onto the BTEC Extended Diploma in year two.
+                        </p>
+                        <h2 id="colorred">Entry requirements</h2>
+                        <p>
+                            Students studying a BTEC Extended Diploma programme should normally have achieved 5 GCSE's at Grade C/4 and 
+                            above, including one of either English and Maths (with the other grade no lower than a D/3), or the equivalent 
+                            in their own country. Alternatively, students who have studied at Level 2 Diploma/Certificate or a BTEC First 
+                            Diploma in a related subject should have achieved at least Merit grades.<br>
+                            For those students that do not meet the necessary entry requirements, the Academy may offer the opportunity 
+                            to study an OCR Level 2 Sports Qualification as an alternative.
+                        </p>
+
+                        <h2 id="colorred">Progression opportunities</h2>
+                        <p>
+                            Upon succesful completion of the BTEC 3 Extended Diploma, students will have the equivalent of three A levels. The 
+                            course not only serves as a route to fulltime employment, it is also a proven progression route to Higher Education, 
+                            such as University and degree level.For further information on degree level courses offered through Alpha Football 
+                            Academy, <a href="{% url 'degree' %}">click here</a>.
+                        </p>
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

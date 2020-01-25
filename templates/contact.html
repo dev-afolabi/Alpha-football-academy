@@ -1,0 +1,83 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-contact %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+ 
+                <section>  
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">Get In Touch With Us.</h1>	
+ 
+                         <p class="lead"></p> 
+ 
+                         <p>The Alpha Football Academy in England is located in the town of stammford, in the centre of the UK.The academy 
+                                has 10 years of experience coaching football to young talented players.</p>
+ 
+                                
+
+                            <div class="row" id="form">
+                                <a name="reg"></a>
+                                 <div class="col-seven tab-full">
+                      
+                                     <section>  
+                                        {% if submitted %}
+                                        {% if messages %}
+                                        <ul class="messages">
+                                            {% for message in messages %}
+                                            <p id="colorred" class="{{ message.tags }}">{{ message }}</p>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+    
+                                    {% else %}
+                                    <div class="row">
+                                    <form method="POST">
+                                            {% csrf_token %}
+                                            {{ form.as_p }}
+                                            <button type="submit">Send</button>
+                                    </form>
+                                </div>
+                                {% endif %}
+                      
+                                      </section>
+                                 </div>
+                             </div>
+                         <div class="row">
+                             <div class="col-six tab-full">
+                                 <h4 id="colorred">Where to Find Us</h4>
+ 
+                                   <p>
+                              1600 Amphitheatre Parkway<br>
+                              Mountain View, CA<br>
+                              94043 US
+                              </p>
+ 
+                             </div>
+ 
+                             <div class="col-six tab-full">
+                                 <h4 id="colorred">Contact Info</h4>
+ 
+                                <p>
+                                    info@alphafootballacademy.co.uk <br>
+    			     
+                                </p>
+ 
+                             </div>
+ 
+                         </div>
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

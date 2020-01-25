@@ -1,0 +1,109 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-categories %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+ 
+                <section>  
+                     <div class="primary-content">
+ 
+                         <h1 id="color" class="entry-title add-bottom">FULL-TIME FOOTBALL PROGRAMME</h1>
+                         <hr>
+                         <img src="{% static 'academy_website/academy-footballs.jpg' %}">
+                         <hr>	 
+ 
+                         <p>Enrolment onto our full-time programme commences in september and january of every year. 
+                             if the student is studying one of our academic qualifications, the course duration is 
+                             one to three years, dependent on the qualification being taken.</p>
+                             <p>The academy's intensive training programme has been designed to enhance every individuals 
+                             game. Our training sessions and matches are led by highly qualified UEFA A coaches, 
+                             including experienced former professional players and managers.</p>
+                             <p>Sessions focus on improving individual technique, as well as developing tactical awareness 
+                             and an understanding of the game. These sessions, alongside strenghtening physical attributes 
+                             through a robust conditioning programme delivered by Chronos Gym, leaves the student fully 
+                             prepared for the modern game.                             
+                         </p>
+
+                         <h1 id="color"  >COURSE INFORMATION</h1>
+                         <hr>
+                         
+                         <h3 id="colorred" >Academic football team</h3>
+
+                         <p>
+                             The academy football team, Alpha stamford, are an FA Charter Standard Club, competing in the National 
+                             League U19 youth aliance, British Colleges U19 League and Midland Football U21 League, as well as 
+                             local county FA tournaments.</p>
+                             <p>Friendly fixtures are regularly arranged against Premier League and Football League oppositions, whilst 
+                             specific showcase matches are staged in front of Premier League and English Football League scouts, 
+                             giving each student a chance to test and benchmark their development against professional clubs in 
+                             England.</p>
+                             <p>Each year, subject to EU funding, students in their second year can attend a two-week placement with a 
+                             professional club in Europe. Placements in the past have taken place in Belgium and Spain, enabling students 
+                             to receive further training specific to European Football, whilst enhancing opportunities of progression 
+                             within the game.
+                         </p>
+
+                         <h3 id="colorred" >Football activities</h3>
+
+                         <p>
+                             Away from the pitch itself, a number of activities are arranged to further enhance the students football 
+                             development. Examples of some of these can include:
+
+                             <ul>
+                                 <li>Guest speaker sessions with former professional footballers and managers.</li>
+                                 <li>Sessions about contracts with FIFA-approved Player Agents.</li>
+                                 <li>Expert coaching sessions from UEFA-qualified coaches.</li>
+                                 <li>Specialist goalkeeping sessions from UEFA-qualified coaches.</li>
+                                 <li>Specific strength and conditioning sessions with qualified instructors including yoga.</li>
+                                 <li>Fitness monitoring and testing</li>
+                                 <li>Physiotherapy sessions and first aid training.</li>
+                                 <li>Team building activities</li>
+                                 <li>Support with exit pathways and provisions of references.</li>
+                             </ul>
+                         </p>
+
+                         <h1 id="color" >Fees</h1>
+                         <hr>
+                         <h2 id="colorred" >UK/EU based students</h2>
+
+                         <p>&pound;13,995 (<a href="{% url 'btec3' %}">BTEC Level 3</a>)</p>
+                         <p>&pound;15,995 (<a href="{% url 'english' %}">English Language)</a></p>
+                         <p>&pound;16,995 (<a href="{% url 'degree' %}">Degree Course)</a> - Per Year</p>
+
+
+                         <h2 id="colorred" >International students</h2>
+
+                         <p>&pound;14,995 (<a href="{% url 'btec3' %}">BTEC Level 3</a>)</p>
+                         <p>&pound;15,995 (<a href="{% url 'english' %}">English Language)</a></p>
+                         <p>&pound;16,995 (<a href="{% url 'degree' %}">Degree Course)</a>- Per Year</p>
+
+                         
+ 
+                         <div class="row">
+                                <div class="col-six tab-full">
+                                        <h4 id="colorred">Contact us for more information</h4>
+        
+                                       <p>info@alphafootballacademy.co.uk<br>
+                                         <br>
+                                           Phone: (+44) 7480 726207			     
+                                       </p>
+        
+                                    </div>
+ 
+                             
+ 
+                         </div>
+ 
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}

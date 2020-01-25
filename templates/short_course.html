@@ -1,0 +1,131 @@
+{% extends parent_template|default:"pages/base_pages.html" %}
+{% block nav-categories %}
+class="current"
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+        <div class="row">
+            <div class="col-twelve">
+ 
+                <section>  
+ 
+                     <div class="primary-content">
+ 
+                         <h1 id="color"  class="entry-title add-bottom">SHORT COURSES FOOTBALL PROGRAMME</h1>
+                         <hr>	 
+ 
+                         
+                             <img src="{% static 'academy_website/academy-footballf.jpg' %}">
+                             <p> Alpha Football Academy also offer short courses designed to give players an experience of 
+                            what life is like at the academy.</p>
+                            <p>All short courses are fully residential using one of the Academy's boarding houses or 
+                            registered landladies, and optional extracts such as English Language lessons can be 
+                            provided.
+                        </p>
+
+                         <h1 id="color" >COURSE INFORMATION</h1>
+                         <hr>
+                         
+                         <h3 id="colorred" >About Short Courses</h3>
+
+                         <p>
+                             The short courses offer <strong>intensive football coaching</strong> and training for 
+                             football players aged 16-21 from the UK and abroad and will provide Match Analysis, 
+                             Performance Analysis and Coaches advice. Short Courses work on a monthly basis, with 
+                             players paying for each month they stay. 
+                         </p>
+
+                         <h3 id="colorred" >Short course programme</h3>
+
+                         <p>
+                             Included in a short course is:
+
+                             <ul>
+                                 <li>Top quality football training at the Borderville Sports Complex</li>
+                                 <li>First-class football coaching programmes with UEFA 'A' coaches and advice from Managers in the professional game</li>
+                                 <li>An intensive football training regime form Monday - Saturday.</li>
+                                 <li>Fixtures against League and Non-League opposition with the opportunity to impress opponents and watching scouts.</li>
+                                 <li>Specialist coaching and advice including strength &amp; conditioning, diet &amp; nutrition, goalkeeping coaching(if applicable)</li>
+                                 <li>Physiotherapy and sport injury cover</li>
+                                 <li>Welfare support</li>
+                                 <li>Full board accomodation with 3 meals per day</li>
+                                 <li>Recreational activities, excursions and Team-Building activities.</li>
+                                 <li>Transportation to games and training</li>
+                             </ul>
+                         </p>
+
+                         <h2 id="color" >Short course availability</h2>
+                         <hr>
+                         <h2 id="colorred" >2018/19 dates</h2>
+
+                         <p>
+                             A short course can be booked for any number of weeks between the following dates:
+                             <ul>
+                                 <li>04 Sep 2018 - 19 Dec 2018</li>
+                                 <li>22 Jan 2019 - 21 Apr 2019</li>
+                                 <li>06 May 2019 - 05 Aug 2019</li>
+                             </ul>
+                         </p>
+
+                         <h2 id="color" >Fees</h2>
+                         <ul>
+                            <li>&pound;500 per week</li>
+                         </ul>
+
+                         <p>
+                             All fees are inclusive of VAT and cover everything except travel to and from the Alpha Football 
+                             Academy and any personal expenditure. We can help arrange airport transfers - please contact 
+                             us to arrange.
+                         </p>
+
+
+                         <h2 id="color" >Optional extras</h2>
+                         <ul>
+                             <li>English Language - 15 hours per week (Beginner/Intermediate/Advanced level)- additional &pound;200/week</li>
+                             <li>Airport Transfers - price on request</li>
+                             <li>Academy Training Kit Pack (inc. shirt/shorts/socks)- price on request</li>
+                         </ul>
+
+                         <h2 id="color" >International students</h2>
+                         <p>
+                             International students would only require a UK Visitor Visa to attend the Academy for a short course programme.
+                         </p>
+
+                         <h2 id="color" >Further Information</h2>
+                         <p>
+                             Should you require further information, please email us at info@alphafootballacademy.co.uk
+                         </p>
+                         
+                         <div class="row" id="form">
+                            <a id="register"></a>
+                             <div class="col-four tab-full">
+                                 
+                                 <section>  
+                                                 {% if submitted %}
+                                                 <p id="color"> Your Registration Form Has Been Submitted Succesfully</p>
+                                                 <p id="colorred">Please check your Email to complete your Registration</p>
+                                                 {% else %}
+                                                 <form action="" enctype="multipart/form-data" method="POST" novalidate>
+                                                 
+                                                     <div class="form-field">
+                                                     {% csrf_token %}
+                                                     {{ form.as_p }}
+                                                     </div>
+                                                     <button class="btn btn-success" type="submit">Submit</button>
+                                                 
+                                                 </form>
+                                                 {% endif %} 
+                  
+                                  </section>
+                             </div>
+                         </div>
+                 </section>
+            
+ 
+             </div> <!-- end col-twelve -->
+        </div> <!-- end row -->		
+    </section> <!-- end content -->
+{% endblock %}
